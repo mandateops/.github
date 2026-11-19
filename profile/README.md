@@ -6,12 +6,12 @@ MandateOps Audit is a pre-release test for payout backends. It runs your own bac
 
 ## How it fits together
 
-| Piece               | What it is                                                                                                                                                    | Where                                                  |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
-| `@mandateops/audit` | The TypeScript test library. A test declares the payout it expects, injects a provider failure, calls your service and gets back a record of what money left. | [npm](https://www.npmjs.com/package/@mandateops/audit) |
-| `@mandateops/cli`   | The `mandateops` CLI. It runs your service and the test provider in containers, applies the faults, captures every provider effect and decides the result.    | npm                                                    |
-| Hosted runs         | The same tests on MandateOps servers, with run history in your workspace.                                                                                     | [app.getmandateops.com](https://app.getmandateops.com) |
-| Playground          | A sample payout backend with known failure modes: break it, read the evidence, fix it.                                                                        | Coming soon                                            |
+| Piece               | What it is                                                                                                                                                    | Where                                                                                                         |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| `@mandateops/audit` | The TypeScript test library. A test declares the payout it expects, injects a provider failure, calls your service and gets back a record of what money left. | [npm](https://www.npmjs.com/package/@mandateops/audit)                                                        |
+| `@mandateops/cli`   | The `mandateops` CLI. It runs your service and the test provider in containers, applies the faults, captures every provider effect and decides the result.    | npm                                                                                                           |
+| Hosted runs         | The same tests on MandateOps servers, with run history in your workspace.                                                                                     | [app.getmandateops.com](https://app.getmandateops.com)                                                        |
+| Playground          | Payout bugs replayed step by step: where the money and the records stop agreeing, and how to fix it. Hand-written, with no engine code.                       | [play.getmandateops.com](https://play.getmandateops.com) ([source](https://github.com/mandateops/playground)) |
 
 ## What a test covers
 
@@ -33,7 +33,7 @@ Then follow the [getting started guide](https://getmandateops.com/getting-starte
 
 ## Open and closed
 
-The `@mandateops/audit` package is Apache-2.0 licensed. The `mandateops` CLI and the hosted platform are proprietary.
+The `@mandateops/audit` package is Apache-2.0 licensed. The [playground](https://github.com/mandateops/playground) is MIT licensed. The `mandateops` CLI and the hosted platform are proprietary.
 
 ## Contact
 
